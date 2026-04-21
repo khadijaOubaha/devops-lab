@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon App DevOps</title>
+    <meta charset="UTF-8">
+    <title>Magic CI/CD App</title>
+    <!-- Lien "Magic" vers le CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Ma Liste de Tâches (CI/CD)</h1>
-    <ul>
-        {% for task in tasks %}
-            <li>{{ task }}</li>
-        {% endfor %}
-    </ul>
-    <form action="/add" method="post">
-        <input type="text" name="task" placeholder="Nouvelle tâche">
-        <button type="submit">Ajouter</button>
-    </form>
+    <div class="container">
+        <h1>✨ Mes Missions DevOps</h1>
+        
+        <ul>
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+
+        <form action="/add" method="post" class="input-group">
+            <input type="text" name="task" placeholder="Nouvelle mission..." required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
 </body>
 </html>
