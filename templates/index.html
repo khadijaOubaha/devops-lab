@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon App DevOps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ma Liste de Tâches (CI/CD)</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/add" method="post">
+        <input type="text" name="task" placeholder="Nouvelle tâche">
+        <button type="submit">Ajouter</button>
+    </form>
+</body>
+</html>
