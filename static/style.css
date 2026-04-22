@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --primary: #28d728;
-    --secondary: #91edcb;
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
     --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     --glass: rgba(255, 255, 255, 0.1);
 }
@@ -22,7 +22,7 @@ body {
 .container {
     background: var(--glass);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(158, 24, 24, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -85,7 +85,7 @@ button {
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(52, 51, 56, 0.4);
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
 }
 
 button:hover {
