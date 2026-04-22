@@ -14,11 +14,11 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# On copie le fichier des dépendances d'abord (optimisation du cache)
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# On copie tout le reste du projet (templates, static, app.py)
+
 COPY . .
 
 EXPOSE 5000
