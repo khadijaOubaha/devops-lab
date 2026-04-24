@@ -14,7 +14,7 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 # Simule une base de données
-tasks = ["Installer Jenkins", "Configurer Docker", "Réussir le pipeline","version final"]
+tasks = ["safa ", "Configurer Docker", "Réussir le pipeline","version final"]
 
 @app.route("/")
 def home():
